@@ -312,6 +312,7 @@ header .container {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 4px;
 }
 
 
@@ -513,12 +514,14 @@ header .container {
 
 .button-part .item {
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .button-part {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    
 }
 
 .button-part .portfolio-button {
@@ -717,7 +720,6 @@ li .bottom-item:focus {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 100px;
     margin: 0;
 
     list-style: none;
@@ -736,7 +738,8 @@ li .bottom-item:focus {
     fill: var(--primary-bg-color);
 }
 
-.bottom-social-icon:hover {
+.bottom-social-icon:hover,
+.bottom-social-icon:focus {
     display: flex;
     align-content: center;
     justify-content: center;
