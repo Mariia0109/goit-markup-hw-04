@@ -380,7 +380,6 @@ header .container {
     margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 94px;
     width: 270px;
 }
 
@@ -440,7 +439,8 @@ header .container {
     fill: var(--sixth-bg-color);
 }
 
-.team-social-icon:hover {
+.team-social-icon:hover,
+.team-social-icon:focus {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -486,10 +486,8 @@ header .container {
     line-height: 1.62;
     letter-spacing: 0.03em;
     padding: 6px 25px;
-    display: inline-block;
     min-width: 73px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border: 4px solid transparent;
+    
     }
 
 .button-part .item {
@@ -502,16 +500,15 @@ header .container {
     line-height: 1.62;
     letter-spacing: 0.03em;
     padding: 6px 22px;
-    display: inline-block;
     min-width: 103px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border: 4px solid transparent;
+    border: 0px solid transparent;
 }
 
 .button-part .item:hover,
 .button-part .item:focus {
     background-color: var(--accent-color);
     color: var(--primary-bg-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-part .item {
@@ -648,7 +645,6 @@ li .adress-element {
     color: var(--primary-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    max-width: 1600px;
 }
 
 .container.bottom-info {
@@ -707,6 +703,7 @@ li .bottom-item:focus {
     width: 206px;
     margin-left: 0;
     margin-right: 0;
+    padding: 0;
 }
 
 .bottom-info {
@@ -736,7 +733,7 @@ li .bottom-item:focus {
     width: 44px;
     height: 44px;
     
-    fill: var(--sixth-bg-color);
+    fill: var(--primary-bg-color);
 }
 
 .bottom-social-icon:hover {
